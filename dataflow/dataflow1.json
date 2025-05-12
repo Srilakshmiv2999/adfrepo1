@@ -44,7 +44,7 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     mapColumn(",
-				"          FullName = FirsName",
+				"          FullName = column1",
 				"     )) ~> sink1"
 			]
 		}
