@@ -23,7 +23,7 @@
 			],
 			"transformations": [
 				{
-					"name": "derivedColumn1"
+					"name": "dervcolum1"
 				}
 			],
 			"scriptLines": [
@@ -34,9 +34,9 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 derive(FirsName = concat(FirsName,LastName) ,",
-				"          column1 = ERROR_FUNCTION('')) ~> derivedColumn1",
-				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"source1 derive(FirsName = concat(FirsName,LastName),",
+				"          column1 = ERROR_FUNCTION('')) ~> dervcolum1",
+				"dervcolum1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
 				"          FullName as string",
